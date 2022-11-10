@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int call_by_value(int n){
+    cout<<"The address of n in call_by_value function is: "<<&n<<endl;
+    n *=n;
+    return n;
+}
+
+void call_by_ref_pointer(int *n){
+    cout<<"The address of n in call_by_ref_pointer function is: "<<&n<<endl;
+    *n *= *n;
+}
+int main(){
+    int n=10;
+    cout<<"Address of n in main is: "<<&n<<endl;
+    call_by_ref_pointer(&n);
+    cout<<"Ans: "<<n<<endl;
+    cout<<"Value of n is: "<<n<<endl;
+    
+    return 0;
+  
+}
