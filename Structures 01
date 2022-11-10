@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+struct Data{
+    int a=50;
+    char b='a';
+    float c=24.45;
+    
+    void printer();
+};
+
+void Data::printer(){
+    cout<<a<<endl;
+    cout<<b<<endl;
+    cout<<c<<endl;
+}
+
+int main(){
+    struct Data obj;
+    obj.printer();
+    
+}
