@@ -1,0 +1,19 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+
+
+void call_by_ref_address(int& n){
+    cout<<"The address of n in call_by_ref_address function is: "<<&n<<endl;
+    n *= n;
+}
+int main(){
+    int n=10;
+    cout<<"Address of n in main is: "<<&n<<endl;
+    call_by_ref_address(n);
+    cout<<"Ans: "<<n<<endl;
+    cout<<"Value of n is: "<<n<<endl;
+    
+    return 0;
+  
+}
